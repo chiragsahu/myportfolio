@@ -3,7 +3,6 @@ import {
   Box,
   Container,
   Typography,
-  TextField,
   Button,
   Grid,
   IconButton,
@@ -35,7 +34,7 @@ const Contact = () => {
   const socialLinks = [
     { icon: FaGithub, url: "https://github.com/chiragsahu" },
     { icon: FaLinkedin, url: "https://linkedin.com/in/chiragsahu" },
-    { icon: FaTwitter, url: "https://x.com/Nikii309" },
+    { icon: FaTwitter, url: "https://x.com/chirag_sa_hu" },
   ];
 
   return (

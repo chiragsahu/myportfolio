@@ -1,54 +1,74 @@
-import React from 'react';
-import { Box, Container, Typography, Grid, Card, CardContent, CardMedia, CardActions, Button, Chip } from '@mui/material';
-import { motion } from 'framer-motion';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LaunchIcon from '@mui/icons-material/Launch';
-import bbk from '../assets/bbk.webp';
-import cgBudget from '../assets/cgBudget.webp'; 
-import fixq from '../assets/fixq.webp';
-import logo from '../assets/logo.png';
+import React from "react";
+import {
+  Box,
+  Container,
+  Typography,
+  Grid,
+  Card,
+  CardContent,
+  CardMedia,
+  CardActions,
+  Button,
+  Chip,
+} from "@mui/material";
+import { motion } from "framer-motion";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LaunchIcon from "@mui/icons-material/Launch";
 //                 mx: 'auto',
 const projects = [
   {
-    title: 'HE HRIMS',
-    description: 'Developed a mobile-based Face Attendance System for the Higher Education Department. The app uses real-time face recognition and location verification to mark employee attendance across all colleges. Ensures secure, accurate, and paperless attendance accessible online by authorized institutions.',
-    image: logo,
+    title: "Starbuds Colorado",
+    description:
+      "Flutter-based App for Colorado’s Star Buds dispensaries, offering geo-restricted services for cannabis product purchases. Users can browse and make pickup reservations, with seamless payment and location-based restrictions for in-store pickups.",
+    image:
+      "https://starbudscolorado.com/wp-content/uploads/2022/03/Star-Buds-Logo_b.svg",
     imageStyle: {
-      width: '100%', // Changed to 100% width
-      height: '150', // Increased height
-      objectFit: 'contain', // Changed to contain to show full image
-      margin: '15px 0' // Added margin for spacing
+      width: "100%",
+      height: "150",
+      objectFit: "contain",
+      margin: "15px 0",
     },
-    technologies: ['Flutter', 'Dart', 'Face Recognition', 'Location Services'],
-    github: 'https://github.com/Nikitaverma309',
-    live: 'https://heonline.cg.nic.in/',
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Geo-restrictions",
+      "Payment Integration",
+    ],
+    github: "",
+    live: "https://apps.apple.com/us/app/starbuds-colorado/id6502454156",
   },
   {
-    title: 'Chhattisgarh Budget',
-    description: 'Official app of the Finance Department, Govt. of Chhattisgarh, providing public access to budget documents in a user-friendly format.',
-    image: cgBudget,
-   
-    technologies: ['Flutter', 'Dart', 'PDF Viewer', 'State Management'],
-    github: 'https://github.com/Nikitaverma309',
-    live: 'https://play.google.com/store/apps/details?id=com.cgbudget&hl=en_IN&pli=1',
+    title: "PAYG",
+    description:
+      "A versatile payment app for both merchants and consumers. It enables users to manage expenses, credit, and accept payments, while merchants can create profiles, payment links, and network to promote their services, resulting in a 30% increase in user engagement.",
+    image: "https://payg.in/images/Logos/Logos/PayG-Dark.svg",
+    technologies: ["Flutter", "Dart", "Payment Management"],
+    github: "",
+    live: "https://play.google.com/store/apps/details?id=com.paygdigitals.payg&hl=en_IN",
   },
   {
-    title: 'Blue birds Kindergarten',
-    description: 'An interactive and innovative school management software with features like live classroom streaming, student attendance, fees management, curriculum tracking, and notifications.',
-    image: bbk,
-  
-    technologies: ['Flutter', 'Dart', 'Real-time Streaming', 'Payment Integration'],
-    github: 'https://github.com/Nikitaverma309',
-    live: 'https://play.google.com/store/apps/details?id=com.fixingdots.htkc.bbk_parent',
+    title: "RMM",
+    description:
+      "Mobile Device Management (MDM) solution for securing financed Android phones and Android TVs by monitoring EMI payments and enforcing restrictions in cases of delays or non-payment.",
+    image: "",
+    technologies: [
+      "Kotlin",
+      "Flutter",
+      "Device Management",
+      "Push Notifications",
+    ],
+    github: "",
+    live: "",
   },
   {
-    title: 'Fixq',
-    description: 'An online marketplace connecting automobile parts with potential customers. A modern and advanced HeadStart solution for business growth and revenue targets.',
-    image: fixq,
-   
-    technologies: ['Flutter', 'Dart', 'API Integration', 'Payment Gateway'],
-    github: 'https://github.com/Nikitaverma309',
-    live: 'https://play.google.com/store/apps/details?id=com.fixingdots.htkc.fixq&hl=en_IN',
+    title: "SPGo",
+    description:
+      "An internal business management app with Flutter, enabling users to manage posts, articles, and schedule board meetings, streamlining communication and collaboration across executive teams.",
+    image:
+      "https://play-lh.googleusercontent.com/R1tduSx_TbVOGqUuuKFFiYlI4OUcWRw9bAXbDcLd6auPZpQy0pKUYpkWF_VSvtPXYw=w480-h960-rw",
+    technologies: ["Flutter", "Business Management", "Collaboration"],
+    github: "",
+    live: "https://play.google.com/store/apps/details?id=spc.summitplanners.com&hl=en",
   },
 ];
 
@@ -58,7 +78,7 @@ const Projects = () => {
       id="projects"
       sx={{
         py: 8,
-        bgcolor: 'background.paper',
+        bgcolor: "background.paper",
       }}
     >
       <Container maxWidth="lg">
@@ -72,16 +92,16 @@ const Projects = () => {
             variant="h2"
             sx={{
               mb: 6,
-              color: 'text.primary',
-              textAlign: 'center',
-              '&::after': {
+              color: "text.primary",
+              textAlign: "center",
+              "&::after": {
                 content: '""',
-                display: 'block',
-                width: '60px',
-                height: '4px',
-                bgcolor: 'primary.main',
+                display: "block",
+                width: "60px",
+                height: "4px",
+                bgcolor: "primary.main",
                 mt: 2,
-                mx: 'auto',
+                mx: "auto",
               },
             }}
           >
@@ -98,31 +118,32 @@ const Projects = () => {
                 >
                   <Card
                     sx={{
-                      height: '100%',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      bgcolor: 'background.default',
-                      transition: 'transform 0.3s ease-in-out',
-                      '&:hover': {
-                        transform: 'translateY(-5px)',
+                      height: "100%",
+                      display: "flex",
+                      flexDirection: "column",
+                      bgcolor: "background.default",
+                      transition: "transform 0.3s ease-in-out",
+                      "&:hover": {
+                        transform: "translateY(-5px)",
                       },
                     }}
                   >
                     <Box
                       sx={{
-                        width: '200px',
-                        height: '200px',
-                        margin: '20px auto',
-                        borderRadius: '50%',
-                        overflow: 'hidden',
+                        width: "200px",
+                        height: "200px",
+                        margin: "20px auto",
+                        borderRadius: "50%",
+                        overflow: "hidden",
+                        backgroundColor: "white",
                       }}
                     >
                       <CardMedia
                         component="img"
                         sx={{
-                          width: '100%',
-                          height: '100%',
-                          objectFit: 'cover',
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "contain",
                         }}
                         image={project.image}
                         alt={project.title}
@@ -133,7 +154,7 @@ const Projects = () => {
                         gutterBottom
                         variant="h5"
                         component="h2"
-                        sx={{ color: 'text.primary' }}
+                        sx={{ color: "text.primary" }}
                       >
                         {project.title}
                       </Typography>
@@ -144,39 +165,43 @@ const Projects = () => {
                       >
                         {project.description}
                       </Typography>
-                      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
                         {project.technologies.map((tech) => (
                           <Chip
                             key={tech}
                             label={tech}
                             size="small"
                             sx={{
-                              bgcolor: 'background.paper',
-                              color: 'primary.main',
+                              bgcolor: "background.paper",
+                              color: "primary.main",
                             }}
                           />
                         ))}
                       </Box>
                     </CardContent>
                     <CardActions>
-                      <Button
-                        size="small"
-                        startIcon={<GitHubIcon />}
-                        href={project.github}
-                        target="_blank"
-                        sx={{ color: 'primary.main' }}
-                      >
-                        Code
-                      </Button>
-                      <Button
-                        size="small"
-                        startIcon={<LaunchIcon />}
-                        href={project.live}
-                        target="_blank"
-                        sx={{ color: 'primary.main' }}
-                      >
-                        Live Demo
-                      </Button>
+                      {project.github && (
+                        <Button
+                          size="small"
+                          startIcon={<GitHubIcon />}
+                          href={project.github}
+                          target="_blank"
+                          sx={{ color: "primary.main" }}
+                        >
+                          Code
+                        </Button>
+                      )}
+                      {project.live && (
+                        <Button
+                          size="small"
+                          startIcon={<LaunchIcon />}
+                          href={project.live}
+                          target="_blank"
+                          sx={{ color: "primary.main" }}
+                        >
+                          Live Demo
+                        </Button>
+                      )}
                     </CardActions>
                   </Card>
                 </motion.div>

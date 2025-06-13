@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Container, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
-import nikiLogo from '../assets/nikiLogo.png';
+import chiruLogo from '../assets/chiruLogo.png';
 
 const Hero = () => {
   return (
@@ -111,8 +111,8 @@ const Hero = () => {
           </Grid>
           <Grid item xs={12} md={6} sx={{ textAlign: 'center' }}>
             <motion.img
-              src={nikiLogo}
-              alt="Niki Logo Illustration"
+              src={chiruLogo}
+              alt="Chirag Logo Illustration"
               style={{ maxWidth: '90%', height: 'auto', borderRadius: '16px' }}
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}

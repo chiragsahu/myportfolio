@@ -1,8 +1,10 @@
-import React from 'react';
-import { Box, Container, Typography, Grid, Link } from '@mui/material';
-import { motion } from 'framer-motion';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import profile from '../assets/profile_nikita.jpeg'; // Ensure this path is correct
+import React from "react";
+import { Box, Container, Typography, Grid, Link } from "@mui/material";
+import { motion } from "framer-motion";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import profile from "../assets/profile_chirag.png"; // Ensure this path is correct
+import { Button } from "react-scroll";
+import EmailIcon from "@mui/icons-material/Email";
 
 const About = () => {
   return (
@@ -10,7 +12,7 @@ const About = () => {
       id="about"
       sx={{
         py: 8,
-        bgcolor: 'background.paper',
+        bgcolor: "background.paper",
       }}
     >
       <Container maxWidth="lg">
@@ -24,13 +26,13 @@ const About = () => {
             variant="h2"
             sx={{
               mb: 4,
-              color: 'text.primary',
-              '&::after': {
+              color: "text.primary",
+              "&::after": {
                 content: '""',
-                display: 'block',
-                width: '60px',
-                height: '4px',
-                bgcolor: 'primary.main',
+                display: "block",
+                width: "60px",
+                height: "4px",
+                bgcolor: "primary.main",
                 mt: 2,
               },
             }}
@@ -48,7 +50,7 @@ const About = () => {
                 <Typography
                   variant="h4"
                   sx={{
-                    color: 'primary.main',
+                    color: "primary.main",
                     mb: 2,
                   }}
                 >
@@ -64,7 +66,7 @@ const About = () => {
                 <Typography
                   variant="h6"
                   sx={{
-                    color: 'text.primary',
+                    color: "text.primary",
                     mb: 3,
                   }}
                 >
@@ -80,14 +82,15 @@ const About = () => {
                 <Typography
                   variant="body1"
                   sx={{
-                    color: 'text.secondary',
+                    color: "text.secondary",
                     mb: 3,
                     lineHeight: 1.8,
                   }}
                 >
-                  I am a Senior Flutter Developer with 4.5+ years of experience in mobile app development. 
-                  Currently working at Talentas Technology, HYD. I specialize in developing 
-                  scalable, cross-platform applications using Flutter and Dart.
+                  I am a Senior Flutter Developer with 4.5+ years of experience
+                  in mobile app development. Currently working at Talentas
+                  Technology, HYD. I specialize in developing scalable,
+                  cross-platform applications using Flutter and Dart.
                 </Typography>
               </motion.div>
               <motion.div
@@ -96,7 +99,7 @@ const About = () => {
                 transition={{ duration: 0.7, delay: 0.7 }}
                 viewport={{ once: false }}
               >
-                <Typography
+                {/* <Typography
                   variant="body1"
                   sx={{
                     color: 'text.secondary',
@@ -107,35 +110,38 @@ const About = () => {
                   My expertise includes developing real-time face recognition systems, location-based services, 
                   and complex mobile applications. I have successfully delivered projects for government departments 
                   and private organizations, ensuring high performance and user satisfaction.
-                </Typography>
+                </Typography> */}
               </motion.div>
-              <Box sx={{ display: 'flex', gap: 2, mb: 3 }}>
+              <Box
+                sx={{ display: "flex", gap: 2, mb: 3, alignItems: "center" }}
+              >
                 <Link
-                  href="https://verma-34a97a227"
+                  href="https://www.linkedin.com/in/chiragsahu/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  sx={{ color: 'primary.main' }}
+                  sx={{ color: "primary.main" }}
                 >
                   <FaLinkedin size={24} />
                 </Link>
                 <Link
-                  href="https://github.com/Nikitaverma309"
+                  href="https://github.com/chiragsahu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  sx={{ color: 'primary.main' }}
+                  sx={{ color: "primary.main" }}
                 >
                   <FaGithub size={24} />
                 </Link>
+                <Link
+                  href="mailto:chiragsahu2020@gmail.com"
+                  sx={{
+                    color: "primary.main",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <EmailIcon style={{ marginRight: 4 }} />
+                </Link>
               </Box>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: 'text.secondary',
-                  mb: 1,
-                }}
-              >
-                Email: chiragsahu2020@gmail.com
-              </Typography>
               {/* <Typography
                 variant="body1"
                 sx={{
@@ -148,20 +154,20 @@ const About = () => {
             <Grid item xs={12} md={6}>
               <Box
                 sx={{
-                  position: 'relative',
-                  width: '250px',
-                  height: '250px',
-                  margin: '0 auto',
-                  '&::before': {
+                  position: "relative",
+                  width: "250px",
+                  height: "250px",
+                  margin: "0 auto",
+                  "&::before": {
                     content: '""',
-                    position: 'absolute',
+                    position: "absolute",
                     top: 0,
                     left: 0,
-                    width: '100%',
-                    height: '100%',
-                    border: '4px solid',
-                    borderColor: 'primary.main',
-                    borderRadius: '50%',
+                    width: "100%",
+                    height: "100%",
+                    border: "4px solid",
+                    borderColor: "primary.main",
+                    borderRadius: "50%",
                     zIndex: 0,
                   },
                 }}
@@ -170,12 +176,12 @@ const About = () => {
                   src={profile}
                   alt="Chirag Sahu"
                   style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    position: 'relative',
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    position: "relative",
                     zIndex: 1,
-                    borderRadius: '50%',
+                    borderRadius: "50%",
                   }}
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
