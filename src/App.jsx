@@ -8,6 +8,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import DownloadResumeButton from './components/DownloadResumeButton';
 
 const theme = createTheme({
   palette: {
@@ -40,13 +41,14 @@ function App() {
       <CssBaseline />
       <Box sx={{ minHeight: '100vh', bgcolor: 'background.default' }}>
         <Navbar />
-        <Box component="main" sx={{ pt: 8 }}>
-          <Hero />
-          <About />
-          <Skills />
-          <Projects />
-          <Contact />
-        </Box>
+      <Box component="main" sx={{ pt: 8 }}>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </Box>
+      <DownloadResumeButton />
       </Box>
     </ThemeProvider>
   );
