@@ -38,6 +38,20 @@ const projects = [
     live: "https://apps.apple.com/us/app/starbuds-colorado/id6502454156",
   },
   {
+    title: "BlockConnect",
+    description:
+      "Flutter-based app showcasing a Proof-of-Concept for connecting to Ethereum Sepolia Testnet. Features include blockchain wallet integration, message signing with Ethereum accounts, and sending test transactions—all within a sleek cross-platform Flutter UI.",
+    image: "",
+    technologies: [
+      "Flutter",
+      "Ethereum",
+      "Blockchain",
+      "Sepolia Testnet"
+    ],
+    github: "https://github.com/chiragsahu/Blockconnect",
+    live: "https://youtube.com/shorts/CTOzioqrDXo",
+  },
+  {
     title: "PAYG",
     description:
       "A versatile payment app for both merchants and consumers. It enables users to manage expenses, credit, and accept payments, while merchants can create profiles, payment links, and network to promote their services, resulting in a 30% increase in user engagement.",
