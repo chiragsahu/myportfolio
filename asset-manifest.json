@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/myportfolio/static/css/main.9f088a99.css",
+    "main.js": "/myportfolio/static/js/main.3581a85c.js",
+    "static/media/profile_chirag.png": "/myportfolio/static/media/profile_chirag.2f772dc968a08b45b24e.png",
+    "static/media/chiruLogo.png": "/myportfolio/static/media/chiruLogo.8b07c00925b097e1b0af.png",
+    "index.html": "/myportfolio/index.html",
+    "main.9f088a99.css.map": "/myportfolio/static/css/main.9f088a99.css.map",
+    "main.3581a85c.js.map": "/myportfolio/static/js/main.3581a85c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f088a99.css",
+    "static/js/main.3581a85c.js"
+  ]
+}
