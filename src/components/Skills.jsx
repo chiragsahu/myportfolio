@@ -20,24 +20,25 @@ import {
 
 // Skill data with Material icons separated by categories
 const skills = {
-  "Programming Languages": [
+  Languages: [
     { name: "Dart", icon: MdDeveloperMode, level: 95 },
     { name: "JavaScript", icon: MdOutlineJavascript, level: 80 },
     { name: "HTML/CSS", icon: MdHtml, level: 85 },
   ],
-  Tools: [
-    { name: "Git/GitHub", icon: MdCloud, level: 90 },
-    { name: "VS Code", icon: MdTerminal, level: 95 },
-    { name: "Android Studio", icon: MdAndroid, level: 90 },
-    { name: "Mac/Linux", icon: MdLaptopMac, level: 85 },
+  Frameworks: [
+    { name: "Flutter", icon: MdDevices, level: 95 },
+    { name: "Node.js", icon: MdBuild, level: 75 },
   ],
   Databases: [
     { name: "MySQL", icon: MdStorage, level: 80 },
     { name: "MongoDB", icon: MdOutlineLeaderboard, level: 75 },
   ],
-  Frameworks: [
-    { name: "Flutter", icon: MdDevices, level: 95 },
-    { name: "Node.js", icon: MdBuild, level: 75 },
+  "Development Tools": [
+    { name: "Git/GitHub", icon: MdCloud, level: 90 },
+    { name: "Android Studio", icon: MdAndroid, level: 90 },
+    { name: "flutterflow", icon: MdBuild, level: 80 },
+    { name: "aws", icon: MdCloud, level: 80 },
+    { name: "jira", icon: MdOutlineLeaderboard, level: 80 },
   ],
 };
 
