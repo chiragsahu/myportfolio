@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Typography, Container, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
 import chiruLogo from '../assets/chiruLogo.png';

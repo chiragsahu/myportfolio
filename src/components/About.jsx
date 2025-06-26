@@ -1,9 +1,7 @@
-import React from "react";
 import { Box, Container, Typography, Grid, Link } from "@mui/material";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import profile from "../assets/profile_chirag.png"; // Ensure this path is correct
-import { Button } from "react-scroll";
 import EmailIcon from "@mui/icons-material/Email";
 
 const About = () => {

@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 // Material Design Icons (react-icons/md)
 import {
   MdAndroid,
-  MdCode,
   MdHtml,
   MdStorage,
   MdDevices,
@@ -14,8 +13,6 @@ import {
   MdDeveloperMode,
   MdBuild,
   MdCloud,
-  MdLaptopMac,
-  MdTerminal,
 } from "react-icons/md";
 
 // Skill data with Material icons separated by categories
@@ -23,7 +20,9 @@ const skills = {
   Languages: [
     { name: "Dart", icon: MdDeveloperMode, level: 95 },
     { name: "JavaScript", icon: MdOutlineJavascript, level: 80 },
-    { name: "HTML/CSS", icon: MdHtml, level: 85 },
+    { name: "Python", icon: MdOutlineJavascript, level: 80 },
+    { name: "Kotlin", icon: MdOutlineJavascript, level: 80 },
+    { name: "HTML/CSS", icon: MdHtml, level: 70 },
   ],
   Frameworks: [
     { name: "Flutter", icon: MdDevices, level: 95 },
@@ -36,9 +35,9 @@ const skills = {
   "Development Tools": [
     { name: "Git/GitHub", icon: MdCloud, level: 90 },
     { name: "Android Studio", icon: MdAndroid, level: 90 },
-    { name: "flutterflow", icon: MdBuild, level: 80 },
-    { name: "aws", icon: MdCloud, level: 80 },
-    { name: "jira", icon: MdOutlineLeaderboard, level: 80 },
+    { name: "Flutterflow", icon: MdBuild, level: 80 },
+    { name: "AWS", icon: MdCloud, level: 65 },
+    { name: "JIRA", icon: MdOutlineLeaderboard, level: 80 },
   ],
 };
 
